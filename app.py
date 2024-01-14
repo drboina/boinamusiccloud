@@ -5,7 +5,7 @@ import numpy as np
 from scipy.io import wavfile
 import streamlit as st
 
-AUDIO_EXTENSIONS = ["wav", "flac", "mp3", "aac", "ogg", "oga", "m4a", "opus", "wma"]
+AUDIO_EXTENSIONS = ["mp3"]
 
 st.image("logo_chico.png")
 
@@ -23,7 +23,7 @@ def get_audio_files_in_dir(directory):
                 out.append(item)
     return out
 
-avdir = os.path.expanduser("/Users/boinas/Documents/soundcloudboina/boinas/")
+avdir = os.path.expanduser("/Users/boinas/Documents/boinasmusiccloud/boinas/")
 audiofiles = get_audio_files_in_dir(avdir)
 
 if len(audiofiles) == 0:
