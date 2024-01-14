@@ -23,7 +23,7 @@ def get_audio_files_in_dir(directory):
                 out.append(item)
     return out
 
-avdir = os.path.expanduser("/Users/boinas/Documents/boinasmusiccloud/boinas/")
+avdir = os.path.expanduser("//Users/boinas/Documents/boinamusiccloud/boinas/")
 audiofiles = get_audio_files_in_dir(avdir)
 
 if len(audiofiles) == 0:
