@@ -2,7 +2,6 @@ import io
 import os
 import wave
 import numpy as np
-from scipy.io import wavfile
 import streamlit as st
 
 AUDIO_EXTENSIONS = ["mp3"]
